@@ -1,6 +1,5 @@
 import os
 import json
-import logging
 from dotenv import load_dotenv
 from datasets import Dataset
 from ragas import evaluate

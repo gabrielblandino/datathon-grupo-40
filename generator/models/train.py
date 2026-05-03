@@ -4,7 +4,7 @@ import logging
 import mlflow
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import f1_score, precision_score, recall_score, roc_auc_score
+from sklearn.metrics import f1_score, precision_score
 from sklearn.model_selection import train_test_split
 
 logger = logging.getLogger(__name__)
@@ -60,7 +60,7 @@ def train_and_log():
         with open(metrics_path, "w") as f:
             json.dump(metrics, f, indent=4)
             
-        print(f"Modelo treinado com sucesso. Dados lidos de build/.")
+        print("Modelo treinado com sucesso. Dados lidos de build/.")
 
 if __name__ == "__main__":
     train_and_log()

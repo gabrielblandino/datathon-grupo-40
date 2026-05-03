@@ -1,7 +1,6 @@
 """Fixtures compartilhados para testes."""
 import pandas as pd
 import pytest
-from generator.features.feature_engineering import compute_features
 
 @pytest.fixture
 def sample_data() -> pd.DataFrame:

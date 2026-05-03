@@ -1,4 +1,3 @@
-import pytest
 import torch
 from generator.models.baseline import get_sklearn_baseline, get_pytorch_baseline
 

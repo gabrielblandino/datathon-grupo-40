@@ -1,0 +1,82 @@
+[
+    {
+        "query": "Qual é o limite máximo de DTI permitido para empréstimos de Grau A?",
+        "expected_answer": "De acordo com a política interna, o DTI (Debt-to-Income) máximo permitido para o Grau A é de 35%."
+    },
+    {
+        "query": "Qual é a renda anual mínima necessária para ser elegível a um empréstimo?",
+        "expected_answer": "A política interna estabelece que a renda anual mínima exigida é de $30.000.[cite: 5]"
+    },
+    {
+        "query": "Qual é a taxa de juros média histórica para um empréstimo de Grau B?",
+        "expected_answer": "A taxa de juros média histórica para empréstimos classificados como Grau B é de 11,2%.[cite: 5]"
+    },
+    {
+        "query": "Se eu possuo uma dívida mensal de $2.000 e uma renda mensal bruta de $5.000, qual é o meu DTI?",
+        "expected_answer": "The calculated DTI is 40.00%.[cite: 5]"
+    },
+    {
+        "query": "Candidatos com histórico de inadimplência recente são aceitos pelo sistema?",
+        "expected_answer": "Não. Candidatos com histórico de default (inadimplência) nos últimos 2 anos são rejeitados automaticamente.[cite: 5]"
+    },
+    {
+        "query": "Qual é a taxa de juros média para empréstimos de Grau E?",
+        "expected_answer": "A taxa média histórica de juros para o Grau E é de 21,5%.[cite: 5]"
+    },
+    {
+        "query": "Qual o DTI máximo permitido para solicitantes de Grau B e C?",
+        "expected_answer": "Para os Graus B e C, o limite máximo de DTI aceitável é de 40%.[cite: 5]"
+    },
+    {
+        "query": "O que indica a coluna 'loan_status' no conjunto de dados de empréstimos aceitos?",
+        "expected_answer": "A coluna 'loan_status' indica o estado atual do empréstimo, como 'Fully Paid' (Pago) ou 'Charged Off' (Inadimplente).[cite: 3]"
+    },
+    {
+        "query": "No arquivo de propostas rejeitadas, qual coluna representa a pontuação de risco do candidato?",
+        "expected_answer": "A pontuação de risco é representada pela coluna 'Risk_Score'.[cite: 4]"
+    },
+    {
+        "query": "Calcule o DTI para uma dívida de $1.500 e uma renda bruta de $6.000.",
+        "expected_answer": "The calculated DTI is 25.00%.[cite: 5]"
+    },
+    {
+        "query": "Qual é a taxa média histórica de juros para o Grau G?",
+        "expected_answer": "A taxa de juros média histórica para o Grau G é de 28,0%.[cite: 5]"
+    },
+    {
+        "query": "O que representam as colunas 'fico_range_low' e 'fico_range_high'?",
+        "expected_answer": "Elas representam, respectivamente, o limite inferior e superior da faixa de pontuação FICO do tomador no momento da solicitação.[cite: 3]"
+    },
+    {
+        "query": "Qual é a taxa de juros média aplicada para o Grau A?",
+        "expected_answer": "A taxa média histórica de juros para o Grau A é de 7,5%.[cite: 5]"
+    },
+    {
+        "query": "O que acontece se um termo de busca não for encontrado na política de crédito?",
+        "expected_answer": "O sistema informa que nenhuma política específica foi encontrada e recomenda a consulta ao manual do subscritor.[cite: 5]"
+    },
+    {
+        "query": "Qual o DTI de um cliente com renda de $10.000 e pagamentos de dívida de $3.500?",
+        "expected_answer": "The calculated DTI is 35.00%.[cite: 5]"
+    },
+    {
+        "query": "O que a coluna 'emp_length' descreve no dataset?",
+        "expected_answer": "Descreve o tempo de emprego do tomador do empréstimo em anos.[cite: 3]"
+    },
+    {
+        "query": "Qual é a taxa de juros média para o Grau D?",
+        "expected_answer": "A taxa de juros média histórica para o Grau D é de 18,0%.[cite: 5]"
+    },
+    {
+        "query": "Qual coluna do dataset 'accepted' contém o valor total solicitado pelo cliente?",
+        "expected_answer": "O valor total solicitado está contido na coluna 'loan_amnt'.[cite: 3]"
+    },
+    {
+        "query": "Calcule o DTI para uma renda mensal de $4.000 e uma dívida total de $1.200.",
+        "expected_answer": "The calculated DTI is 30.00%.[cite: 5]"
+    },
+    {
+        "query": "Qual é a taxa de juros média histórica para o Grau F?",
+        "expected_answer": "A taxa de juros média histórica para o Grau F é de 25,0%.[cite: 5]"
+    }
+]

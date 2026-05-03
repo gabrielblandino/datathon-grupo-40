@@ -1,5 +1,4 @@
 import logging
-from typing import List
 
 # Importação corrigida para versões modernas do LangChain:
 from langchain.agents import AgentExecutor, create_react_agent

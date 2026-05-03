@@ -1,5 +1,4 @@
 from fastapi import FastAPI, Request, HTTPException
-from fastapi.responses import JSONResponse
 from pydantic import BaseModel, Field
 from prometheus_client import Counter, Histogram, make_asgi_app
 import time

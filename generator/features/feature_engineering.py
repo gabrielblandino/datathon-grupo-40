@@ -1,6 +1,5 @@
 import os
 import pandas as pd
-import pandera.pandas as pa
 
 def compute_features(df: pd.DataFrame) -> pd.DataFrame:
     """

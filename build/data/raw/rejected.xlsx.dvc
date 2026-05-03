@@ -1,0 +1,5 @@
+outs:
+- md5: c21333fbe030cfef8b25edf2a610d5af
+  size: 50298501
+  hash: md5
+  path: rejected.xlsx

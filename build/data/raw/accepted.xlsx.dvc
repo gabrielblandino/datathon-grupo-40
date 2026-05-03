@@ -1,0 +1,5 @@
+outs:
+- md5: ebb0b7cdc86e97f49d126480620645f2
+  size: 644430735
+  hash: md5
+  path: accepted.xlsx
