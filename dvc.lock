@@ -1,0 +1,38 @@
+schema: '2.0'
+stages:
+  feature_engineering:
+    cmd: python generator/features/feature_engineering.py
+    deps:
+    - path: build/data/raw/accepted.xlsx
+      hash: md5
+      md5: ebb0b7cdc86e97f49d126480620645f2
+      size: 644430735
+    - path: build/data/raw/rejected.xlsx
+      hash: md5
+      md5: c21333fbe030cfef8b25edf2a610d5af
+      size: 50298501
+    - path: generator/features/feature_engineering.py
+      hash: md5
+      md5: 4fc38aadd21f91f70ca6a7c6bca47724
+      size: 1835
+    outs:
+    - path: build/data/processed/features_ready.csv
+      hash: md5
+      md5: bc6df76647e9ede14f0ed12ac745a3eb
+      size: 9976481
+  train:
+    cmd: python generator/models/train.py
+    deps:
+    - path: build/data/processed/features_ready.csv
+      hash: md5
+      md5: bc6df76647e9ede14f0ed12ac745a3eb
+      size: 9976481
+    - path: generator/models/train.py
+      hash: md5
+      md5: b3259d4b1cb6a067b9b4ce954a761328
+      size: 2361
+    outs:
+    - path: evaluation/metrics.json
+      hash: md5
+      md5: 2417596db106ac1cce409730a7885393
+      size: 90

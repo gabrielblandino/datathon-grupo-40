@@ -1,0 +1,82 @@
+[
+    {
+        "query": "Qual é o limite de DTI?",
+        "expected_answer": "Um DTI acima de 40% geralmente indica alto risco. Para a classificação A, o máximo é 35%, e para B e C é 40%."
+    },
+    {
+        "query": "Qual é a renda anual mínima exigida?",
+        "expected_answer": "A renda anual mínima exigida é de $30.000."
+    },
+    {
+        "query": "O que acontece se um candidato tiver histórico de inadimplência?",
+        "expected_answer": "Candidatos com histórico de inadimplência nos últimos 2 anos são automaticamente rejeitados."
+    },
+    {
+        "query": "Qual é a taxa de juros média para a classificação A?",
+        "expected_answer": "A taxa de juros média para a classificação A é 7,5%."
+    },
+    {
+        "query": "Qual é a taxa de juros média para a classificação C?",
+        "expected_answer": "A taxa de juros média para a classificação C é 14,5%."
+    },
+    {
+        "query": "Calcule o DTI para $1000 de dívida e $4000 de renda.",
+        "expected_answer": "O DTI calculado é 25,00%."
+    },
+    {
+        "query": "Qual é a taxa de juros média para a classificação G?",
+        "expected_answer": "A taxa de juros média para a classificação G é 28,0%."
+    },
+    {
+        "query": "Existe uma política específica para limites de DTI da classificação D?",
+        "expected_answer": "Nenhuma política específica foi encontrada para a consulta fornecida. Consulte o manual do analista de crédito."
+    },
+    {
+        "query": "Calcule o DTI para $2500 de dívida e $5000 de renda.",
+        "expected_answer": "O DTI calculado é 50,00%."
+    },
+    {
+        "query": "Qual é a taxa de juros média para a classificação E?",
+        "expected_answer": "A taxa de juros média para a classificação E é 21,5%."
+    },
+    {
+        "query": "Como são tratados candidatos com inadimplência de 3 anos atrás?",
+        "expected_answer": "A política determina rejeição automática para inadimplência nos últimos 2 anos. Casos mais antigos podem exigir análise manual."
+    },
+    {
+        "query": "Calcule o DTI para $500 de dívida e $3000 de renda.",
+        "expected_answer": "O DTI calculado é 16,67%."
+    },
+    {
+        "query": "Qual é a taxa de juros média para a classificação F?",
+        "expected_answer": "A taxa de juros média para a classificação F é 25,0%."
+    },
+    {
+        "query": "Qual é a taxa de juros média para a classificação B?",
+        "expected_answer": "A taxa de juros média para a classificação B é 11,2%."
+    },
+    {
+        "query": "Tenho uma renda de $50.000, isso é suficiente?",
+        "expected_answer": "Sim, a renda anual mínima exigida é de $30.000."
+    },
+    {
+        "query": "Calcule o DTI para $0 de dívida e $4000 de renda.",
+        "expected_answer": "O DTI calculado é 0,00%."
+    },
+    {
+        "query": "Qual é a renda mínima?",
+        "expected_answer": "A renda anual mínima exigida é de $30.000."
+    },
+    {
+        "query": "Se a renda for $20.000, posso obter um empréstimo?",
+        "expected_answer": "Não, a renda anual mínima exigida é de $30.000."
+    },
+    {
+        "query": "Você pode calcular o DTI se a renda for 0?",
+        "expected_answer": "Erro: A renda mensal deve ser maior que zero."
+    },
+    {
+        "query": "Qual é a taxa de juros média para a classificação D?",
+        "expected_answer": "A taxa de juros média para a classificação D é 18,0%."
+    }
+]

@@ -1,0 +1,7 @@
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: 'datathon_api'
+    static_configs:
+      - targets: ['api:8000'] # O nome 'api' refere-se ao serviço no docker-compose

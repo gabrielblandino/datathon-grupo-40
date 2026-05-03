@@ -1,0 +1,17 @@
+stages:
+  feature_engineering:
+    cmd: python generator/features/feature_engineering.py
+    deps:
+      - build/data/raw/accepted.xlsx
+      - build/data/raw/rejected.xlsx
+      - generator/features/feature_engineering.py
+    outs:
+      - build/data/processed/features_ready.csv
+  train:
+    cmd: python generator/models/train.py
+    deps:
+      - build/data/processed/features_ready.csv
+      - generator/models/train.py
+    metrics:
+      - evaluation/metrics.json:
+          cache: false

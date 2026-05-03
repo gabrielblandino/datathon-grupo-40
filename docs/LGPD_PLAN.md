@@ -1,0 +1,4 @@
+# Plano de Conformidade LGPD (Lei 13.709/2018)
+1. **Anonimização no MLOps:** As informações de mutuários (ex: `emp_title`, `url`, `desc`) na base de dados (Drive/Raw) são convertidas via Hashing assimétrica antes do treinamento.
+2. **Dados em Dev:** O ambiente de Desenvolvimento (Notebooks/Testes locais) trabalha exclusivamente com os dados Sintéticos (`sample_data` do pytest), garantindo que dados de produção sensíveis nunca fiquem na máquina do engenheiro (GAP 08).
+3. **Telemetria Ocultada:** Langfuse/TruLens registram as métricas de performance técnica do Agente de IA, mas o Payload textual da conversa passa pela engine `AnonymizerEngine` (Presidio) na camada do servidor antes do Logging no Grafana.

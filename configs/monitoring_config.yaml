@@ -1,0 +1,5 @@
+drift_detection:
+  method: "Population Stability Index (PSI)"
+  thresholds:
+    psi_warning: 0.1 # Acima de 0.1: Alerta no Dashboard (Grafana)
+    psi_critical: 0.2 # Acima de 0.2: Gatilho automático para retreino
