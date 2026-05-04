@@ -2,9 +2,9 @@ name: Datathon CI
 
 on:
   push:
-    paths: ['generator/**', 'tests/**', 'evaluation/**']
+    paths: ['generator/**', 'tests/**', 'evaluation/**', '.github/workflows/**']
   pull_request:
-    paths: ['generator/**', 'tests/**', 'evaluation/**']
+    paths: ['generator/**', 'tests/**', 'evaluation/**', '.github/workflows/**']
 
 jobs:
   quality:
