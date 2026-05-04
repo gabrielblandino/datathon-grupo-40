@@ -29,6 +29,19 @@ datathon-grupo-40/
 ├── docker-compose.yml     # Orquestração de serviços (API, MLflow, Prometheus, Grafana)
 └── Makefile               # Automação de comandos
 
+## Obtenção dos Dados (Aviso Importante para a Banca)
+
+Nosso pipeline utiliza o **DVC** integrado ao Google Drive para o versionamento dos dados brutos e processados. No entanto, devido às recentes políticas de segurança do Google Cloud (bloqueio de Escopos Restritos para aplicativos em fase de testes), o comando `dvc pull` via OAuth exigirá autenticação de um usuário na "whitelist" do GCP.
+
+Para garantir a total reprodutibilidade do projeto por qualquer avaliador, disponibilizamos a rota alternativa de dados:
+
+**Passo a passo para setup manual dos dados:**
+1. Acesse o dataset original público no Kaggle: https://www.kaggle.com/datasets/wordsforthewise/lending-club
+2. Faça o download dos arquivos.
+3. Salve os arquivos originais dentro do diretório `build/data/raw/` do nosso projeto (garanta que estejam com os nomes originais esperados, ex: `accepted.xlsx` e `rejected.xlsx`).
+
+Com os arquivos na pasta correta, a esteira do DVC reconhecerá os dados locais e você poderá seguir o fluxo normal executando `make train` (ou `dvc repro train`) para rodar o pipeline de MLOps completo!
+
 🛠️ Como Executar Localmente
 1. Pré-requisitos
 Python 3.11+
