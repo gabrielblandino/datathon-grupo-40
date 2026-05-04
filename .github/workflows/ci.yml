@@ -36,6 +36,8 @@ jobs:
         run: bandit -r generator/ -c pyproject.toml
 
       - name: Unit tests (pytest)
+        env:
+          OPENAI_API_KEY: "sk-dummy-key-para-passar-nos-testes"
         run: |
           pytest tests/ -x \
           --cov=generator \
