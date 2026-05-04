@@ -66,7 +66,7 @@ class OutputGuardrail:
                 )
 
             if results:
-                anonymized = self.anonymizer.anonymize(text=text, analyzer_results=results)
+                anonymized = self.anonymizer.anonymize(text=text, analyzer_results=results)  # type: ignore
                 return anonymized.text
             return text
         except Exception as e:

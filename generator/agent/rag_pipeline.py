@@ -30,7 +30,7 @@ def setup_rag_pipeline() -> FAISS:
     vectorstore = FAISS.from_documents(split_docs, embeddings)
     
     # Retorna o retriever otimizado com top_k
-    return vectorstore.as_retriever(search_kwargs={"k": 2})
+    return vectorstore.as_retriever(search_kwargs={"k": 2})  # type: ignore
 
 def run_rag(query: str, retriever) -> Tuple[str, List[str]]:
     """

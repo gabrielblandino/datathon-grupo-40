@@ -38,7 +38,7 @@ def create_datathon_agent(model_name: str = "gpt-4o-mini", temperature: float = 
     agent = create_react_agent(llm=llm, tools=tools, prompt=REACT_PROMPT)
     
     return AgentExecutor(
-        agent=agent,
+        agent=agent,  # type: ignore
         tools=tools,
         verbose=True,
         max_iterations=10,
